@@ -1,0 +1,17 @@
+import random
+real_ans = random.randint(1,25) #random input
+i = " "
+
+q0 = input("Apakah Anda ingin bermain?(y/n) ")
+
+while i != real_ans:
+    if q0 == "n":
+        print("Baiklah.")
+    elif q0 == "y":
+        i = int(input("Masukkan angka dari 1-25: "))
+        if i < real_ans:
+            j1 = print ("Terlalu kecil")
+        elif i > real_ans:
+            j3 = print ("Terlalu besar")
+        else:
+            print("Benar!") #udah sama dengan real_ans, jadi gaakan while lagi.
